@@ -190,6 +190,7 @@ h1, h4{
     }
     .image-1, .image-2, .image-3{
         margin-bottom: 10px;
+        color: #fff;
     }
     .contact-left{
       display: flex;
@@ -206,5 +207,15 @@ h1, h4{
     .intro-paragraph{
         padding: 20px;
         text-align: center;
+    }
+    .side-by-side{
+         align-items: center;
+        
+        display:flex;
+        flex-direction: column;
+    }
+    .column{
+        align-items: center;
+        
     }
 }
