@@ -5,7 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/pic1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.76), rgba(0,0,0,0.75)), url('./images/pic1.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -202,5 +202,9 @@ h1, h4{
     }
     .service-left{
         padding-bottom: 40px;
+    }
+    .intro-paragraph{
+        padding: 20px;
+        text-align: center;
     }
 }
