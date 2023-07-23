@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@300;400;700&family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+
+}
+.intro{
+    padding-top: 190px;
+    color: #fff;
+}
+.name{
+    background-color: transparent;
+    width: 190px;
+    height: 40px;
+    color:#F5F5F5 ;
+    border:2px solid #4CBB17;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.name:hover{
+    letter-spacing: 0.25rem;
+    height: 60px;
+}
+.intro-paragraph{
+    transition: 0.5s;
+}
+.intro-paragraph:hover{
+    letter-spacing: 0.25rem;
+}
+.v_line {
+    border-left: 2px solid #4CBB17;
+    height: 40px;
+   
+     width: 2px;
+}
+.cent{
+    display: flex;
+    flex-direction: row;
+   
+}
+h1, h4{
+    padding-left: 7px;
+}
+.cv{
+    border: none;
+    background-color: black;
+    width: 190px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+}
+.joan{
+  
+ width: 500px;
+ height: 300px;
+}
+.about{
+  padding-left: 130px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.services{
+    color: black;
+    text-align: center;
+  
+    padding: 40px;
+}
+.image-1{
+    background-image: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('./images/campaign.jpg');
+    background-size: cover;
+    background-position: center;
+   width: 340px;
+   height: 154px;
+    text-align: center;
+    transition: 0.5s;
+}
+.image-1:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.image-2{
+    background-image: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('./images/annie.jpg');
+    background-size: cover;
+    background-position: center;
+   width: 340px;
+   height: 154px;
+    text-align: center;
+    transition: 0.5s;
+}
+.image-2:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.image-3{
+    background-image: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('./images/jason.jpg');
+    background-size: cover;
+    background-position: center;
+   width: 340px;
+   height: 154px;
+    text-align: center;
+    transition: 0.5s;
+}
+.image-3:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+.image-4{
+    background-image: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('./images/mimi.jpg');
+    background-size: cover;
+    background-position: center;
+   width: 340px;
+   height: 154px;
+    text-align: center;
+    transition: 0.5s;
+}
+.image-4:hover{
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+.contact-left{
+    background-color: 	#343434;
+    color: #fff;
+    font-style: italic;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.contact-right{
+    background-color: #fff;
+    padding-left: 30px;
+}
+.featured{
+    background-color: #fff;
+    height: 200px;
+}
+.names, .email, .message{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px;
+}
+::placeholder{
+    font-style: italic;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+}
+
+.submit{
+    background-color: #343434;
+    color: #fff;
+    width: 190px;
+    height: 40px;
+    border: none;
+    margin-top:10px
+}
