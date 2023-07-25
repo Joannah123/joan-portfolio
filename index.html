@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="row services">
+        <!-- <div class="row services">
             <div class="col-md-6 service-left" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./images/undraw_code_thinking_re_gka2.svg" width="200px">
              
@@ -52,11 +52,11 @@
             </div>
 
            
-        </div>
+        </div> -->
         <div class="row">
            <div class="col-md-3 image-1" data-aos="fade-up"
            data-aos-duration="3000" >
-            <h4>HELLO</h4>
+            <h4>Skills</h4>
             <p>As a web developer, I possess a diverse skill set that covers front-end and back-end technologies. On the front-end, I am proficient in HTML, CSS, JavaScript.</p>
            
            </div>
@@ -64,17 +64,19 @@
            <div class="col-md-3 image-2" data-aos="fade-up"
            data-aos-duration="3000">
            
-            <h3>Story</h3>
+            <h3>Belief</h3>
             <p>I believe that a successful website goes beyond mere functionality; it must also captivate users and tell a compelling story</p>
            
            </div>
            <div class="col-md-3 image-3" data-aos="fade-up"
            data-aos-duration="3000">
-           <h3>HELLO</h3>
+           <h3>Back-end</h3>
+           <p>On the back-end, I am well-versed in server-side scripting languages such as PHP. I have hands-on experience with databases like MySQL, ensuring seamless data management and retrieval.</p>
            </div>
            <div class="col-md-3  image-4" data-aos="fade-up"
            data-aos-duration="3000">
-            <h3>HELLO</h3>
+            <h3>Thank You!</h3>
+            <p>Thank you for visiting my portfolio! If you're ready to embark on an exciting journey to create a dynamic and engaging web presence, I'd love to be a part of it.</p>
            </div>
         </div>
 
@@ -99,15 +101,17 @@
 
             <div class="col-md-6 message-me" >
 
-           <div class="side-by-side">
-            <input type="text" placeholder="name" class="names">
-            <input type="email" placeholder="email" class="email">
-           </div>
-           
-         <div class="column">
-            <input type="text" placeholder="message" class="message">
-            <button class="submit">SEND</button>
-         </div>
+          <form class="form">
+            <div class="side-by-side">
+                <input type="text" placeholder="name" class="names">
+                <input type="email" placeholder="email" class="email">
+               </div>
+               
+             <div class="column">
+                <input type="text" placeholder="message" class="message">
+                <button class="submit">SEND</button>
+             </div>
+          </form>
 
             </div>
 
@@ -119,6 +123,34 @@
     <script>
       AOS.init();
       duration="1000";
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        const form = document.querySelector(".form")
+
+        function sendMsg(e){
+            e.preventDefault();
+            //pass: 6834E3C5ECAC820EEE5756FEBF61673974BE server : smtp.elasticemail.com port:2525  api 83551e73-c12e-42b5-9baa-65c000c8fd69
+        
+        const names = document.querySelector('.names')
+        const email = document.querySelector('.email')
+        const message = document.querySelector('.message')
+
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'joaneliamuganda@gmail.com',
+    From : email.value,
+    Subject : "Contact Me",
+    Body : message.value
+    }).then(
+    message => alert("Message sent succesfully!")
+    );
+    }
+    form.addEventListener('submit', sendMsg)    
+
     </script>
 </body>
 </html>
